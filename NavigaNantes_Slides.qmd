@@ -1,0 +1,128 @@
+---
+title: "NavigaNantes"
+subtitle: "Dataviz & R-Shiny"
+author: "Bouedo Théo & Le Roux Noa"
+format:
+  revealjs:
+    incremental: true 
+    theme: default
+editor: visual
+---
+
+# Contexte & Objectifs
+
+-   Faciliter la recherche  de points d'intérêt à proximité (écoles, restaurants, hôtels, toilettes publiques, parcs…)
+
+-   Offrir un outil d'aide à la mobilité urbaine et aux  déplacements quotidiens
+
+-   Améliorer l'expérience utilisateur en intégrant les transports en communs
+
+# Enjeux & Utilité 
+
+-   Augmentation de la population en  milieu urbain
+
+-   Besoin croissant d'optimisation des déplacements et d'infos en temps réel
+
+-   Prise en compte des enjeux environnementaux et de la qualité de vie des citoyens
+
+-   Aide à la prise de décision dans le choix d'un logement
+
+# Schéma
+
+![](images/diapo_gslodes-1.png)
+
+# Schéma
+
+![](images/diapo_gslodes-2.png)
+
+# Schéma
+
+![](images/diapo_gslodes-3.png)
+
+# Schéma
+
+![](images/diapo_gslodes-4.png)
+
+::: footer
+[Data Nantes Métropoles](https://data.nantesmetropole.fr/explore/?disjunctive.diffuseur&disjunctive.theme&disjunctive.features&disjunctive.publisher&disjunctive.gestionnaire&disjunctive.keyword&disjunctive.license&source=shared&sort=explore.popularity_score&geonav=world%2Fworld_fr%2Ffr_40_52%2Ffr_60_44%2Ffr_70_244400404&geonav-asc)
+:::
+
+# Schéma
+
+![](images/diapo_gslodes-5.png)
+
+::: footer
+[Data Nantes Métropoles](https://data.nantesmetropole.fr/explore/?disjunctive.diffuseur&disjunctive.theme&disjunctive.features&disjunctive.publisher&disjunctive.gestionnaire&disjunctive.keyword&disjunctive.license&source=shared&sort=explore.popularity_score&geonav=world%2Fworld_fr%2Ffr_40_52%2Ffr_60_44%2Ffr_70_244400404&geonav-asc)
+:::
+
+# Schéma
+
+![](images/diapo_gslodes-6.png)
+
+::: footer
+[API Tan](https://open.tan.fr/doc/openapi) & [API Tan - JSON](https://open.tan.fr/ewp/arrets.json) & [Package infotan](https://github.com/Bouedo/infotan)
+:::
+
+# Schéma
+
+![](images/diapo_gslodes-7.png)
+
+::: footer
+[API Tan](https://open.tan.fr/doc/openapi) & [API Tan - JSON](https://open.tan.fr/ewp/arrets.json) & [Package infotan](https://github.com/Bouedo/infotan)
+:::
+
+# Schéma
+
+![](images/Shiny%20Map.png)
+
+::: footer
+[API Tan](https://open.tan.fr/doc/openapi) & [API Tan - JSON](https://open.tan.fr/ewp/arrets.json) & [Package infotan](https://github.com/Bouedo/infotan)
+:::
+
+# NavigaNantes:
+
+<iframe src="https://kp36yf-noa-l.shinyapps.io/NavigaNantes/" width="100%" height="600px" frameborder="0" scrolling="auto" allowfullscreen>
+
+</iframe>
+
+# Les défis techniques
+
+-   Mise en place d'une interface conviviale et facile à utiliser
+
+-   Intégration des différentes sources de données
+
+-   Mise en place de différentes icônes en fonction de la catégorie du point d'intérêt
+
+-   Adaptation de la fonction du package infoTAN à notre contexte
+
+-   Déploiement de l'app via [***shinyapps.io***](https://www.shinyapps.io/admin/#/application/8649975) et intégration dans cette présentation interactive
+
+# Perspectives & potentiel
+
+-   Extension à d'autres villes et zones géographiques
+
+-   Intégration d'autre types de points d'intérêt
+
+-   Collaboration avec les acteurs locaux pour  l'amélioration de l'offre de service et de l'information disponible *(Sondage, OpenSource)*\
+
+# Merci de votre attention
+
+Avez-vous des questions ?
+
+# Distance d'Haversine
+
+$d = 2r\arcsin{\left(\sqrt{\sin^2{\left(\frac{\Delta\phi}{2}\right)} + \cos{\phi_1}\cos{\phi_2}\sin^2{\left(\frac{\Delta\lambda}{2}\right)}}\right)}$
+
+où :
+
+-   $d$ est la distance entre les deux points en kilomètres,
+
+-   $r$ est le rayon de la Terre en kilomètres (environ 6 371 km),
+
+-   $\phi_1$ et $\phi_2$ sont les latitudes des deux points en radians,
+
+-   $\Delta\phi$ est la différence entre les latitudes des deux points en radians,
+
+-   $\Delta\lambda$ est la différence entre les longitudes des deux points en radians.
+
+# FIN
